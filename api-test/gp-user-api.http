@@ -1,0 +1,31 @@
+###
+POST http://localhost:63010/user/register
+Content-Type: application/json
+
+{
+  "cellphone": "12345",
+  "username": "testuser",
+  "password": "testpassword",
+  "email": "test@example.com"
+}
+
+### ÃÜÂëÄ£Ê½
+POST http://localhost:8081/user/login
+Content-Type: application/json
+
+{
+  "username": "stu2",
+  "password": "111111"
+}
+
+###
+POST http://localhost:8081/register/1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NDQ0Njk1ODQsInVzZXJJZCI6IjUxIiwiYXV0aG9yaXRpZXMiOlt7ImF1dGhvcml0eSI6InRlc3QifV19.VhTSlcq1cu74F-hP0vR6UhkngbbVUKtmAKdKyFkjhe4
+#Authorization
+
+
+
+###
+POST http://localhost:8081/register/2
+

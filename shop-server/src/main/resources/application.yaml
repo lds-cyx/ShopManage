@@ -1,0 +1,26 @@
+shop:
+  jwt:
+    # 设置jwt签名加密时使用的秘钥
+    admin-secret-key: itcast
+    # 设置jwt过期时间
+    admin-ttl: 7200000
+    # 设置前端传递过来的令牌名称
+    admin-token-name: Authorization
+
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-circular-references: true
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://192.168.153.130:3306/gp_user?serverTimezone=UTC&userUnicode=true&useSSL=false&
+      username: root
+      password: 123
+#  redis:
+#    database: ${sky.redis.database}
+#    host: ${sky.redis.host}
+
